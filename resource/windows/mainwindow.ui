@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>一键长草</class>
+ <widget class="QMainWindow" name="一键长草">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="leftlayout">
+      <item>
+       <layout class="QVBoxLayout" name="checklayout">
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>20</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>20</number>
+        </property>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QCheckBox" name="wakeup">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>一键唤醒</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QCheckBox" name="fighting">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>清理理智</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QCheckBox" name="invatation">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>自动公招</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QCheckBox" name="friends">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>拜访好友</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QCheckBox" name="structure">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>基建换班</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QCheckBox" name="shopping">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>信用商店</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QCheckBox" name="mission">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>每日奖励</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QCheckBox" name="rougelike">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>肉鸽代理</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="leftverticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>200</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="buttonlayout">
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QPushButton" name="startbutton">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>开始</string>
+          </property>
+         </widget>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QPushButton" name="stopbutton">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>结束</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="middlelayout">
+      <property name="topMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>20</number>
+      </property>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="drugLayout">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="druglabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>理智药个数</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="drughorizontal">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="drugcomboBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>0个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>全部</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="stonelayout">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="stonelabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>源石个数</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="stonehorizontal">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="stonecomboBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>0个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10个</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>全部</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="activitylayout">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="activitylabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>活动/章节</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="activityhorizontal">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="activitycomboBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>请选择</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="gamelayout">
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="gamelabel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>关卡</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="gamehorizontal">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="gamecomboBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>100</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>请选择</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>200</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="topMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>20</number>
+      </property>
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>200</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QTextBrowser" name="logBrowser">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="settings">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="actionperference"/>
+   </widget>
+   <widget class="QMenu" name="files">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actioninput_files"/>
+    <addaction name="actionoutput_files"/>
+   </widget>
+   <addaction name="settings"/>
+   <addaction name="files"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionperference">
+   <property name="text">
+    <string>perference</string>
+   </property>
+  </action>
+  <action name="actioninput_files">
+   <property name="text">
+    <string>input_files</string>
+   </property>
+  </action>
+  <action name="actionoutput_files">
+   <property name="text">
+    <string>output_files</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
