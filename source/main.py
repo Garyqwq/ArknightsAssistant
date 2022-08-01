@@ -27,6 +27,12 @@ class Win_Main:
         # 左上
         self.ui.wakeup.stateChanged.connect(self.wakeup_check)
         self.ui.fighting.stateChanged.connect(self.fighting_check)
+        self.ui.invitation.stateChanged.connect(self.invitation_check)
+        self.ui.friends.stateChanged.connect(self.friends_check)
+        self.ui.structure.stateChanged.connect(self.structure_check)
+        self.ui.shopping.stateChanged.connect(self.shopping_check)
+        self.ui.mission.stateChanged.connect(self.mission_check)
+        self.ui.rougelike.stateChanged.connect(self.rougelike_check)
 
         # 左下
         self.ui.startbutton.clicked.connect(self.start)
@@ -35,17 +41,22 @@ class Win_Main:
         # 中部
         self.ui.drugcomboBox.currentIndexChanged.connect(self.drugcbox)
         self.ui.stonecomboBox.currentIndexChanged.connect(self.stonecbox)
+        self.ui.activitycomboBox.currentIndexChanged.connect(self.activitycbox)
+        self.ui.gamecomboBox.currentIndexChanged.connect(self.gamecbox)
 
+        # menu_bar
+        self.ui.actionperference.triggered.connect(self.perference)
+        self.ui.actioninput_files.triggered.connect(self.input_files)
+        self.ui.actionoutput_files.triggered.connect(self.output_files)
 
         # 外部信号槽
         global_signal.log_print.connect(self.printlog)
         global_signal.error.connect(self.error)
 
-    def error(self):
-        stop_thread(self.thread)
+        self.load_game()
 
-    def printlog(self, msg):
-        self.ui.logBrowser.append(msg)
+    def load_game(self):
+        pass
 
     def checkbox(self, ui):
         check = ui.text()
@@ -61,15 +72,23 @@ class Win_Main:
     def fighting_check(self):
         self.checkbox(self.ui.fighting)
 
-    def stonecbox(self):
-        stone = self.ui.stonecomboBox.currentText()
-        msg = log(0, "选择源石：" + stone)
-        global_signal.log_print.emit(msg)
+    def invitation_check(self):
+        self.checkbox(self.ui.invitation)
 
-    def drugcbox(self):
-        drug = self.ui.drugcomboBox.currentText()
-        msg = log(0, "选择理智药：" + drug)
-        global_signal.log_print.emit(msg)
+    def friends_check(self):
+        self.checkbox(self.ui.friends)
+
+    def structure_check(self):
+        self.checkbox(self.ui.structure)
+
+    def shopping_check(self):
+        self.checkbox(self.ui.shopping)
+
+    def mission_check(self):
+        self.checkbox(self.ui.mission)
+
+    def rougelike_check(self):
+        self.checkbox(self.ui.rougelike)
 
     def startthread(self):
         assistant_info.pickle_set()
@@ -88,6 +107,37 @@ class Win_Main:
         # self.thread.join()
         stop_thread(self.thread)
         print(self.thread.isAlive())
+
+    def stonecbox(self):
+        stone = self.ui.stonecomboBox.currentText()
+        msg = log(0, "选择源石：" + stone)
+        global_signal.log_print.emit(msg)
+
+    def drugcbox(self):
+        drug = self.ui.drugcomboBox.currentText()
+        msg = log(0, "选择理智药：" + drug)
+        global_signal.log_print.emit(msg)
+
+    def activitycbox(self):
+        pass
+
+    def gamecbox(self):
+        pass
+
+    def perference(self):
+        global_signal.log_print.emit("msg")
+
+    def input_files(self):
+        global_signal.log_print.emit("msg")
+
+    def output_files(self):
+        global_signal.log_print.emit("msg")
+
+    def error(self):
+        stop_thread(self.thread)
+
+    def printlog(self, msg):
+        self.ui.logBrowser.append(msg)
 
 
 def start_ready():
